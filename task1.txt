@@ -1,0 +1,38 @@
+<script type="text/javascript">
+
+function LTVCalc() 
+{ 
+        num1 = document.getElementById("LoanAmt").value;
+        num2 = document.getElementById("AppraisedValue").value;
+document.getElementById("result").value = ((num1 * 100) / num2).toFixed(2);
+}
+
+</script>
+
+
+<!DOCTYPE html>
+<html> 
+<head>
+<meta charset=utf-8 />
+<title>JavaScript program to calculate Loan to value ratio  </title>
+<style type="text/css">
+body {margin: 30px;}
+</style>   
+</head>
+<body>
+<form>
+<p>
+<font color="red">
+What is LTV? </font>
+</P><P>
+A Loan-To-Value Ratio, also referred to as LTV Ratio, is a comparison between the value of your loan and the value of your home. To determine your LTV, Enter the Loan Amount, Appraised Value and Click on calculate.
+</p>
+Loan Amount : <input type="text" id="LoanAmt" /><br>
+Appraised Value: <input type="text" id="AppraisedValue" /><br>
+<br>
+<input type="button" onClick="LTVCalc()" Value="Calculate" /> <br><br>
+<font color = "turquoise"> <b> LTV : </b> </font> <input type="text" name="result" id="result" value="" readonly />
+ % </form>
+</p>
+</body>
+</html>
